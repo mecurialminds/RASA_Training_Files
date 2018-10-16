@@ -1,0 +1,663 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "I love it",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "This is amazing",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "It’s the best",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "So nice",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "Scintillating experience",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "it was a wonderful journey",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "The food was delicious",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "Had a great experience it was awesome",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "your service is best",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "good service",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "thanks for the help",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "nice buses",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "i hate it",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "poor ambience",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "The bus was pathetic",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "Had a very bad experience in my journey",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "The seats were not comfortable enough",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "The meal tasted really bad",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "the food was disgusting",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "bad service",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "i want to Book Seats",
+        "intent": "booking",
+        "entities": []
+      },
+      {
+        "text": "Book Seat to Karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "Karachi",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "I want to book a seat for Karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "Karachi",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "I want to book a seat on 2018-10-10",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 25,
+            "end": 35,
+            "value": "2018-10-10",
+            "entity": "date"
+          }
+        ]
+      },
+      {
+        "text": "I want to buy tickets for 2018-10-10 to Karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 40,
+            "end": 47,
+            "value": "Karachi",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 36,
+            "value": "2018-10-10",
+            "entity": "date"
+          }
+        ]
+      },
+      {
+        "text": "I want to book a seat 4 on 2018-10-10 from rawalpindi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 22,
+            "end": 23,
+            "value": "4",
+            "entity": "seat"
+          },
+          {
+            "start": 27,
+            "end": 37,
+            "value": "2018-10-10",
+            "entity": "date"
+          },
+          {
+            "start": 43,
+            "end": 53,
+            "value": "rawalpindi",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "I want to purchase a ticket for seat 4 on 2018-10-10 from rawalpindi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 37,
+            "end": 38,
+            "value": "4",
+            "entity": "seat"
+          },
+          {
+            "start": 42,
+            "end": 52,
+            "value": "2018-10-10",
+            "entity": "date"
+          },
+          {
+            "start": 58,
+            "end": 68,
+            "value": "rawalpindi",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from rawalpindi to karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 40,
+            "end": 47,
+            "value": "karachi",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 36,
+            "value": "rawalpindi",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from karachi to rawalpindi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "karachi",
+            "entity": "departure_city"
+          },
+          {
+            "start": 37,
+            "end": 47,
+            "value": "rawalpindi",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seat no 3 for karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 29,
+            "end": 36,
+            "value": "karachi",
+            "entity": "destination_city"
+          },
+          {
+            "start": 23,
+            "end": 24,
+            "value": "3",
+            "entity": "seat"
+          }
+        ]
+      },
+      {
+        "text": "I want to book ticket on 2018-10-10 for rawalpindi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 25,
+            "end": 35,
+            "value": "2018-10-10",
+            "entity": "date"
+          },
+          {
+            "start": 40,
+            "end": 50,
+            "value": "rawalpindi",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from karachi to rawalpindi on 2018-10-10",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "karachi",
+            "entity": "departure_city"
+          },
+          {
+            "start": 51,
+            "end": 61,
+            "value": "2018-10-10",
+            "entity": "date"
+          },
+          {
+            "start": 37,
+            "end": 47,
+            "value": "rawalpindi",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to travel from rawalpindi to karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 36,
+            "end": 43,
+            "value": "karachi",
+            "entity": "destination_city"
+          },
+          {
+            "start": 22,
+            "end": 32,
+            "value": "rawalpindi",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "book seats from karachi to rawalpindi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "karachi",
+            "entity": "departure_city"
+          },
+          {
+            "start": 27,
+            "end": 37,
+            "value": "rawalpindi",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from rawalpindi to lahore",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 40,
+            "end": 46,
+            "value": "lahore",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 36,
+            "value": "rawalpindi",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from rawalpindi to karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 40,
+            "end": 47,
+            "value": "karachi",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 36,
+            "value": "rawalpindi",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from rawalpindi to peshawar",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 40,
+            "end": 48,
+            "value": "peshawar",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 36,
+            "value": "rawalpindi",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from karachi to lahore",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 37,
+            "end": 43,
+            "value": "lahore",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "karachi",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from karachi to faisalabad",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 37,
+            "end": 47,
+            "value": "faisalabad",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "karachi",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from lahore to karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "lahore",
+            "entity": "departure_city"
+          },
+          {
+            "start": 36,
+            "end": 43,
+            "value": "karachi",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from lahore to peshawar",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 36,
+            "end": 44,
+            "value": "peshawar",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "lahore",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from lahore to rawalpindi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 36,
+            "end": 46,
+            "value": "rawalpindi",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "lahore",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from lahore to faisalabad",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 36,
+            "end": 46,
+            "value": "faisalabad",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "lahore",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from peshawar to karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "peshawar",
+            "entity": "departure_city"
+          },
+          {
+            "start": 38,
+            "end": 45,
+            "value": "karachi",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from peshawar to lahore",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 38,
+            "end": 44,
+            "value": "lahore",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 34,
+            "value": "peshawar",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from peshawar to faisalabad",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 38,
+            "end": 48,
+            "value": "faisalabad",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 34,
+            "value": "peshawar",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from peshawar to rawalpindi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 38,
+            "end": 48,
+            "value": "rawalpindi",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 34,
+            "value": "peshawar",
+            "entity": "departure_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from faisalabad to karachi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 26,
+            "end": 36,
+            "value": "faisalabad",
+            "entity": "departure_city"
+          },
+          {
+            "start": 40,
+            "end": 47,
+            "value": "karachi",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from faisalabad to lahore",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 26,
+            "end": 36,
+            "value": "faisalabad",
+            "entity": "departure_city"
+          },
+          {
+            "start": 40,
+            "end": 46,
+            "value": "lahore",
+            "entity": "destination_city"
+          }
+        ]
+      },
+      {
+        "text": "i want to book seats from faisalabad to rawalpindi",
+        "intent": "booking",
+        "entities": [
+          {
+            "start": 40,
+            "end": 50,
+            "value": "rawalpindi",
+            "entity": "destination_city"
+          },
+          {
+            "start": 26,
+            "end": 36,
+            "value": "faisalabad",
+            "entity": "departure_city"
+          }
+        ]
+      }
+    ]
+  }
+}
